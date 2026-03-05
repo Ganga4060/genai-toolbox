@@ -259,7 +259,22 @@ enterprise-grade development environment for building clinical and analytics
 solutions securely on Google Cloud.&lt;/p>
 &lt;p>A dataset is a container in your Google Cloud project that holds modality-specific
 healthcare data. Datasets contain other data stores, such as FHIR stores and DICOM
-stores, which in turn hold their own types of healthcare data.&lt;/p></description></item><item><title>Cloud Monitoring</title><link>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/cloud-monitoring/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/cloud-monitoring/</guid><description>&lt;h2 id="about">About&lt;/h2>
+stores, which in turn hold their own types of healthcare data.&lt;/p></description></item><item><title>Cloud Logging Admin</title><link>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/cloud-logging-admin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/cloud-logging-admin/</guid><description>&lt;h2 id="about">About&lt;/h2>
+&lt;p>The Cloud Logging Admin source provides a client to interact with the &lt;a href="https://cloud.google.com/logging/docs">Google
+Cloud Logging API&lt;/a>. This allows tools to list log names, monitored resource types, and query log entries.&lt;/p>
+&lt;p>Authentication can be handled in two ways:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Application Default Credentials (ADC):&lt;/strong> By default, the source uses ADC
+to authenticate with the API.&lt;/li>
+&lt;li>&lt;strong>Client-side OAuth:&lt;/strong> If &lt;code>useClientOAuth&lt;/code> is set to &lt;code>true&lt;/code>, the source will
+expect an OAuth 2.0 access token to be provided by the client (e.g., a web
+browser) for each request.&lt;/li>
+&lt;/ol>
+&lt;h2 id="available-tools">Available Tools&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://Ganga4060.github.io/genai-toolbox/dev/resources/tools/cloudloggingadmin/cloud-logging-admin-list-log-names/">&lt;code>cloud-logging-admin-list-log-names&lt;/code>&lt;/a>
+Lists the log names in the project.&lt;/p></description></item><item><title>Cloud Monitoring</title><link>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/cloud-monitoring/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/cloud-monitoring/</guid><description>&lt;h2 id="about">About&lt;/h2>
 &lt;p>The &lt;code>cloud-monitoring&lt;/code> source provides a client to interact with the &lt;a href="https://cloud.google.com/monitoring/api">Google
 Cloud Monitoring API&lt;/a>. This allows
 tools to access cloud monitoring metrics explorer and run promql queries.&lt;/p>
@@ -402,7 +417,14 @@ browser) for each request.&lt;/li>
  &lt;td>If true, the source will use client-side OAuth for authorization. Otherwise, it will use Application Default Credentials. Defaults to &lt;code>false&lt;/code>.&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Couchbase</title><link>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/couchbase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/couchbase/</guid><description>&lt;h2 id="about">About&lt;/h2>
+&lt;/table></description></item><item><title>CockroachDB</title><link>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/cockroachdb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/cockroachdb/</guid><description>&lt;h2 id="about">About&lt;/h2>
+&lt;p>&lt;a href="https://www.cockroachlabs.com/docs/">CockroachDB&lt;/a> is a distributed SQL database designed for cloud-native applications. It provides strong consistency, horizontal scalability, and built-in resilience with automatic failover and recovery. CockroachDB uses the PostgreSQL wire protocol, making it compatible with many PostgreSQL tools and drivers while providing unique features like multi-region deployments and distributed transactions.&lt;/p>
+&lt;p>&lt;strong>Minimum Version:&lt;/strong> CockroachDB v25.1 or later is recommended for full tool compatibility.&lt;/p>
+&lt;h2 id="available-tools">Available Tools&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://Ganga4060.github.io/genai-toolbox/dev/resources/tools/cockroachdb/cockroachdb-sql/">&lt;code>cockroachdb-sql&lt;/code>&lt;/a>
+Execute SQL queries as prepared statements in CockroachDB (alias for execute-sql).&lt;/p></description></item><item><title>Couchbase</title><link>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/couchbase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/couchbase/</guid><description>&lt;h2 id="about">About&lt;/h2>
 &lt;p>A &lt;code>couchbase&lt;/code> source establishes a connection to a Couchbase database cluster,
 allowing tools to execute SQL queries against it.&lt;/p>
 &lt;h2 id="available-tools">Available Tools&lt;/h2>
@@ -548,7 +570,35 @@ powers AI, analytics, and business intelligence at scale.&lt;/p>
 centralized inventory of the data assets in your organization. Dataplex
 Universal Catalog holds business, technical, and runtime metadata for all of
 your data. It helps you discover relationships and semantics in the metadata by
-applying artificial intelligence and machine learning.&lt;/p></description></item><item><title>Dgraph</title><link>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/dgraph/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/dgraph/</guid><description>&lt;style type="text/css">
+applying artificial intelligence and machine learning.&lt;/p></description></item><item><title>Dataproc Clusters</title><link>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/dataproc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/dataproc/</guid><description>&lt;h2 id="about">About&lt;/h2>
+&lt;p>The &lt;a href="https://cloud.google.com/dataproc/docs/concepts/overview">Dataproc
+Clusters&lt;/a> source
+allows Toolbox to interact with Dataproc Clusters hosted on Google Cloud.&lt;/p>
+&lt;h2 id="available-tools">Available Tools&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://Ganga4060.github.io/genai-toolbox/dev/resources/tools/dataproc/dataproc-get-cluster/">&lt;code>dataproc-get-cluster&lt;/code>&lt;/a>
+Get a specific Dataproc cluster.&lt;/li>
+&lt;li>&lt;a href="https://Ganga4060.github.io/genai-toolbox/dev/resources/tools/dataproc/dataproc-list-clusters/">&lt;code>dataproc-list-clusters&lt;/code>&lt;/a>
+List and filter Dataproc clusters.&lt;/li>
+&lt;li>&lt;a href="https://Ganga4060.github.io/genai-toolbox/dev/resources/tools/dataproc/dataproc-get-job/">&lt;code>dataproc-get-job&lt;/code>&lt;/a>
+Get a specific Dataproc job.&lt;/li>
+&lt;li>&lt;a href="https://Ganga4060.github.io/genai-toolbox/dev/resources/tools/dataproc/dataproc-list-jobs/">&lt;code>dataproc-list-jobs&lt;/code>&lt;/a>
+List and filter Dataproc jobs.&lt;/li>
+&lt;/ul>
+&lt;h2 id="requirements">Requirements&lt;/h2>
+&lt;h3 id="iam-permissions">IAM Permissions&lt;/h3>
+&lt;p>Dataproc uses &lt;a href="https://cloud.google.com/dataproc/docs/concepts/iam/iam">Identity and Access Management
+(IAM)&lt;/a> to control user
+and group access to Dataproc resources.&lt;/p>
+&lt;p>Toolbox will use your &lt;a href="https://cloud.google.com/docs/authentication#adc">Application Default Credentials
+(ADC)&lt;/a> to authorize and
+authenticate when interacting with Dataproc. When using this method, you need to
+ensure the IAM identity associated with your ADC has the correct
+&lt;a href="https://cloud.google.com/dataproc/docs/concepts/iam/iam">permissions&lt;/a>
+for the actions you intend to perform. Common roles include
+&lt;code>roles/dataproc.editor&lt;/code> or &lt;code>roles/dataproc.viewer&lt;/code>. Follow this
+&lt;a href="https://cloud.google.com/docs/authentication/provide-credentials-adc">guide&lt;/a> to
+set up your ADC.&lt;/p></description></item><item><title>Dgraph</title><link>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/dgraph/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Ganga4060.github.io/genai-toolbox/dev/resources/sources/dgraph/</guid><description>&lt;style type="text/css">
  
  .notice {
  --title-color: #fff;
@@ -1221,6 +1271,10 @@ Cancel a running Serverless Spark batch operation.&lt;/li>
 Create a Serverless Spark PySpark batch operation.&lt;/li>
 &lt;li>&lt;a href="https://Ganga4060.github.io/genai-toolbox/dev/resources/tools/serverless-spark/serverless-spark-create-spark-batch/">&lt;code>serverless-spark-create-spark-batch&lt;/code>&lt;/a>
 Create a Serverless Spark Java batch operation.&lt;/li>
+&lt;li>&lt;a href="https://Ganga4060.github.io/genai-toolbox/dev/resources/tools/serverless-spark/serverless-spark-list-sessions/">&lt;code>serverless-spark-list-sessions&lt;/code>&lt;/a>
+List and filter Serverless Spark sessions.&lt;/li>
+&lt;li>&lt;a href="https://Ganga4060.github.io/genai-toolbox/dev/resources/tools/serverless-spark/serverless-spark-get-session/">&lt;code>serverless-spark-get-session&lt;/code>&lt;/a>
+Get a Serverless Spark session.&lt;/li>
 &lt;/ul>
 &lt;h2 id="requirements">Requirements&lt;/h2>
 &lt;h3 id="iam-permissions">IAM Permissions&lt;/h3>
